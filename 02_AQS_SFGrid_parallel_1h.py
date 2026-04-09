@@ -59,7 +59,7 @@ OUTPUT_BASE_DIR = "AQS_SFGridResults"  # NEW output directory for IS/OOS workflo
 #   FILTER_SYMBOLS   = ["AAPL","NVDA"]  → only these symbols
 # ============================================================================
 FILTER_INTERVALS = ["1h"]  # change to None to process all intervals
-# FILTER_SYMBOLS   = None     # change to ["AAPL","NVDA"] to filter symbols
+FILTER_SYMBOLS = None  # change to ["AAPL","NVDA"] to filter symbols
 # FILTER_SYMBOLS   = ["FIGR", "CRCL", "DTCX", "USAR", "GLD", "OKLO", "PLTR", "XLC", "ETHA", "MP"]     # change to ["AAPL","NVDA"] to filter symbols
 # FILTER_SYMBOLS   = ["PLTR", "DTCX", "MGNI", "XME", "COPX", "REMX", "HSBC", "RY", "NEE", "PM", "LMT", "KLAC", "GDXJ", "KTOS", "IBKR"]     # Cindy update list 2-29Mar2026
 # FILTER_SYMBOLS   = ["CAT", "JNJ", "NEM", "USO", "XLE", "GS", "FDX", "MS"]
