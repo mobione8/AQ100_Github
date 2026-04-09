@@ -97,7 +97,8 @@ sharpe_ratio_threshold = 1.0  # Minimum Sharpe ratio required
 # Note: trade_count_threshold and period are calculated dynamically per file
 
 # Parallelization settings
-N_JOBS = -1  # -1 uses all CPU cores, or specify number (e.g., 8)
+# N_JOBS = -1  # -1 uses all CPU cores, or specify number (e.g., 8)
+N_JOBS = 64  # for RUNPOD uses all CPU cores, or specify number (e.g., 8)
 VERBOSE = 10  # Verbosity level for joblib (0=silent, 10=detailed)
 
 # ============================================================================
@@ -495,7 +496,7 @@ if __name__ == "__main__":
                     print(f"({total_combos} combos) ", end="", flush=True)
 
                     # Run parallel backtests on IS data
-                    is_results_list = Parallel(n_jobs=N_JOBS, verbose=0)(
+                    is_results_list = Parallel(n_jobs=N_JOBS, verbose=10)(
                         delayed(backtest_single_combo)(*params)
                         for params in tqdm(
                             param_combinations,
