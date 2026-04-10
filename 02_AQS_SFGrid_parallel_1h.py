@@ -114,7 +114,7 @@ sharpe_ratio_threshold = 1.0  # Minimum Sharpe ratio required
 
 # Parallelization settings
 # N_JOBS = -1  # -1 uses all CPU cores, or specify number (e.g., 8)
-N_JOBS = 16  # for RUNPOD uses all CPU cores, or specify number (e.g., 8)
+N_JOBS = 4  # for RUNPOD uses all CPU cores, or specify number (e.g., 8)
 VERBOSE = 10  # Verbosity level for joblib (0=silent, 10=detailed)
 
 # ============================================================================
